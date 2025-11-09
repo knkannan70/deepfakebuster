@@ -1,0 +1,41 @@
+name: deepfakebuster
+description: A Flutter application for detecting deepfake videos using AI models.
+
+publish_to: 'none'
+
+version: 2.0.0+2
+
+environment:
+  sdk: ">=3.7.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Core packages
+  url_launcher: ^6.3.1
+  image_picker: ^1.1.2
+  http: ^1.2.2
+  path: ^1.9.0
+  image: ^3.1.3
+  path_provider: ^2.0.15
+
+  # AI/ML & Image Processing
+  # ADD THIS LINE
+  tflite_flutter: ^0.11.0
+  video_player: ^2.10.0
+  video_thumbnail: ^0.5.6
+  cv: ^1.1.7
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/models/
